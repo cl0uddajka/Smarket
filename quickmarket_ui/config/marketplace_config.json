@@ -1,0 +1,141 @@
+{
+	"supabase_url": "",
+	"supabase_anon_key": "",
+	"database_schema": {
+		"items_table": "marketplace_items",
+		"sell_events_table": "sell_events",
+		"inventory_table": "player_inventory"
+	},
+	"marketplace_settings": {
+		"max_items_per_player": 100,
+		"min_price": 0.01,
+		"max_price": 999999,
+		"enable_auctions": false,
+		"auction_duration_minutes": 60
+	},
+	"ui_labels": {
+		"sell_button_text": "Sell Item",
+		"buy_button_text": "Buy Item",
+		"price_placeholder": "Enter Price",
+		"your_listings_title": "Your Listings"
+	},
+	"price_rules": {
+		"default_markup_percent": 1.2,
+		"bulk_discount_threshold": 10,
+		"bulk_discount_percent": 0.1
+	},
+	"ui_theme": {
+		"colors": {
+			"background": "#1b1c31",
+			"item_card_bg": "#26294d",
+			"item_card_border": "#3d426b",
+			"selected_item": "#4f46e5",
+			"button": "#e94560",
+			"button_hover": "#ff6b81",
+			"button_pressed": "#b3364d",
+			"text_title": "#ffffff",
+			"text_name": "#eef0ff",
+			"text_price": "#ffd166",
+			"text_subtitle": "#9aa1c9"
+		},
+		"corner_radius": 14,
+		"layout": {
+			"shop_height_ratio": 0.40,
+			"inventory_height_ratio": 0.35,
+			"shop_z_index": 10,
+			"inventory_z_index": 0,
+			"orientation": "portrait",
+			"inventory_width_ratio": 0.45,
+			"show_orientation_button": true,
+			"orientation_button": {
+				"colors": { "bg": "#2c2c3a", "text": "#ffffff" },
+				"font_size": 14,
+				"radius": 8
+			}
+		},
+		"shop": {
+			"enabled": true,
+			"categories": {
+				"list": ["weapon", "armor", "item", "other"],
+				"width": 84,
+				"colors": {
+					"bg": "#26294d",
+					"bg_selected": "#4f46e5",
+					"text": "#9aa1c9",
+					"text_selected": "#ffffff"
+				}
+			}
+		},
+		"textures": {
+			"background": "",
+			"item_card": "",
+			"selected_item": "",
+			"button": "",
+			"default_item": "res://addons/quickmarket_ui/assets/default_item.png"
+		},
+		"texts": {
+			"title": "Shop",
+			"buy_button": "Buy",
+			"price_prefix": "$",
+			"empty_message": "No items available",
+			"your_listings": "Your Listings"
+		},
+		"inventory": {
+			"enabled": true,
+			"rarities": {
+				"common":    { "color": "#c8ccd8" },
+				"uncommon":  { "color": "#3ddc84" },
+				"rare":      { "color": "#3d8bff" },
+				"epic":      { "color": "#b45cff" },
+				"legendary": { "color": "#ff9f43" }
+			},
+			"colors": {
+				"background": "#1e1e1e",
+				"slot": "#323232",
+				"slot_border": "#4d4d4d",
+				"selected_slot": "#e9703e",
+				"hover_slot": "#3d3d3d",
+				"header_bg": "#707070",
+				"header_text": "#e9703e",
+				"count_text": "#ffffff",
+				"count_outline": "#000000"
+			},
+			"texts": {
+				"header_title": "Inventory"
+			},
+			"columns": 5,
+			"slot_size": 96,
+			"slot_radius": 8,
+			"rows_visible": 3,
+			"header_height": 128,
+			"categories": {
+				"colors": {
+					"bg": "#3a3a3a",
+					"bg_selected": "#e9703e",
+					"text": "#cfcfcf",
+					"text_selected": "#ffffff"
+				},
+				"width": 84,
+				"list": ["weapon", "armor", "item", "other"]
+			},
+			"actions": {
+				"colors": {
+					"bg": "#3d3d3d",
+					"bg_hover": "#4a4a4a",
+					"bg_pressed": "#e9703e",
+					"bg_disabled": "#2b2b2b",
+					"text": "#ffffff",
+					"text_disabled": "#777777"
+				},
+				"height": 30,
+				"bar_padding": 8,
+				"list": [
+					{"key": "sell", "text": "Sell"},
+					{"key": "equip", "text": "Equip"},
+					{"key": "listing", "text": "Listing"},
+					{"key": "delete", "text": "Delete"}
+				]
+			}
+		}
+	}
+}

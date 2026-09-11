@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://djagwoovvaar4"]
+
+[ext_resource type="Script" uid="uid://bih4tq1v2xpcm" path="res://addons/quickmarket_ui/scripts/shop_boot.gd" id="1_boot"]
+
+[node name="ShopMain" type="Control" unique_id=14118722]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_boot")
